@@ -36,19 +36,19 @@ const skip=(time)=>{
     </div>
     <div className="controls">
     <div className="one">
-        <button onClick={handlePlay}>Play</button>
+        <button className='buttons1' onClick={handlePlay}>Play</button>
 
     </div>
     <div className="two">
-        <button onClick={handlePause}>Pause</button>
+        <button className='buttons2' onClick={handlePause}>Pause</button>
 
     </div>
     <div className="three">
-        <button onClick={handleforward}>5 sec forward</button>
+        <button className='buttons3' onClick={handleforward}>5 sec forward</button>
 
     </div>
     <div className="four">
-        <button onClick={handlebackward}>5 sec backward</button>
+        <button className='buttons4' onClick={handlebackward}>5 sec backward</button>
 
     </div>
 
