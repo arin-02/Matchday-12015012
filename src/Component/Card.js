@@ -1,18 +1,22 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 
 
 function Card(props) {
-   var a=props.a1 +props.a2+props.a3;
-   var b=props.b1 +props.b2+props.b3;
-   if(a>b)
-   {
+
+    const navigate = useNavigate()
+    
+    const handleclick = ()=>{
+
+        navigate("/second")
     
    }
 
   return (
-
-    
-    <div className='containercard'>
+      
+      
+      
+    <div className='containercard' onClick={handleclick}>
     
         <div className="headingcard">
             {props.leaguename}
@@ -34,7 +38,7 @@ function Card(props) {
             <div className="up">
             v/s
             </div>
-            <div className="mid">
+            <div  className="mid">
 
                 {props.a1}-{props.b1},{props.a2}-{props.b2},{props.a3}-{props.b3}
                 
@@ -53,7 +57,10 @@ function Card(props) {
             </div>
             </div>
         </div>
+        
+
     </div>
+       
   )
 }
 
