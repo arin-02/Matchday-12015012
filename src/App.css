@@ -84,8 +84,8 @@ img{
   
 }
 .gridclass{
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
+  display: flex;
+  
   gap: 0.5em;
 
 }
@@ -183,3 +183,40 @@ img{
   margin-left: 25%;
   margin-right: 25%;
 }
+@media screen and (max-width: 1025px) {
+  .all {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33% ;
+    
+  }
+  
+}
+@media screen and (max-width: 769px) {
+  .all {
+    display: grid;
+    grid-template-columns: 50% 50%
+    
+  }
+  
+}
+@media screen and (max-width: 430px) {
+  .all {
+    display: block;
+    
+  }
+  
+}
+@media screen and (max-width: 430px) {
+  .containercard {
+  
+    margin-top: 3%;
+    
+  }
+  
+}
+
+
+
+
+
+
